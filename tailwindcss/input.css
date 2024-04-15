@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply font-sans antialiased scroll-smooth h-[500rem] bg-neutral-900 text-neutral-300
+}
+
+.drawer-side>:not(.drawer-overlay) {
+	@apply duration-500
+}

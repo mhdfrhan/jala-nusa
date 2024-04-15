@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="public/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<!-- fonts -->
+	<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700,800,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- navbar -->
+
+	<nav class="fixed top-0 left-0 right-0 w-full pt-8 lg:pt-20 duration-500 ease-in-out z-50" id="navbar">
+		<div class="container mx-auto px-5  lg:px-20">
+			<div class="flex items-center justify-between overflow-hidden">
+				<div data-aos="fade-right">
+					<a href="">
+						<img src="public/img/logo.png" class="w-[150px]" alt="Logo">
+					</a>
+				</div>
+				<div>
+					<div class="drawer drawer-end">
+						<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+						<div class="drawer-content" data-aos="fade-left" data-aos-delay="250">
+							<label for="my-drawer-1" class="drawer-button cursor-pointer">
+								<svg class="w-9 h-9 lg:w-[67px] lg:h-[25px]" viewBox="0 0 67 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<line x1="67" y1="0.75" x2="17" y2="0.75" stroke="white" stroke-width="1.5" />
+									<line x1="67" y1="23.75" x2="17" y2="23.75" stroke="white" stroke-width="1.5" />
+									<line x1="50" y1="11.75" y2="11.75" stroke="white" stroke-width="1.5" />
+								</svg>
+							</label>
+						</div>
+						<div class="drawer-side w-full">
+							<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+							<ul class="menu p-4 w-[70%] lg:w-[60%] 2xl:w-1/3 min-h-full bg-neutral-800 text-neutral-300">
+								<!-- Sidebar content here -->
+								<li
+									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									<div class="flex items-center justify-between">
+										<a>Beranda</a>
+										<span class="block text-xs sm:text-sm">01</span>
+									</div>
+								</li>
+								<li
+									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									<div class="flex items-center justify-between">
+										<a>Tentang Kami</a>
+										<span class="block text-xs sm:text-sm">02</span>
+									</div>
+								</li>
+								<li
+									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									<div class="flex items-center justify-between">
+										<a>Wisata Alam</a>
+										<span class="block text-xs sm:text-sm">03</span>
+									</div>
+								</li>
+								<li
+									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									<div class="flex items-center justify-between">
+										<a>Budaya Nusantara</a>
+										<span class="block text-xs sm:text-sm">04</span>
+									</div>
+								</li>
+								<li
+									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									<div class="flex items-center justify-between">
+										<a>Artikel</a>
+										<span class="block text-xs sm:text-sm">05</span>
+									</div>
+								</li>
+								<li
+									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									<div class="flex items-center justify-between">
+										<a>Kontak Kami</a>
+										<span class="block text-xs sm:text-sm">06</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- end navbar -->
+
+
+	<!-- banner -->
+
+	<section>
+		<div class="container mx-auto px-5 pt-28 lg:px-14 lg:pt-14 overflow-hidden">
+			<div class="h-[460px] md:h-[550px] flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
+				style="background-image: url('public/img/banner.png');">
+				<div class="max-w-xl mx-auto text-center flex flex-col h-full justify-between overflow-hidden">
+					<div></div>
+					<div>
+						<h1 class="text-5xl lg:text-[85px] font-cabinet-grotesk font-medium tracking-wide" data-aos="zoom-in"
+							data-aos-delay="600">JALA NUSA</h1>
+						<div class="mt-2 mb-8">
+							<p class="md:text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="900">Jelaha Alam dan Budaya Nusantara
+							</p>
+						</div>
+						<div class="flex flex-wrap items-center gap-3 justify-center" data-aos="fade-left" data-aos-delay="1400">
+							<a href=""
+								class="btn bg-primary border-primary hover:bg-white hover:text-neutral-900 hover:border-white px-8">Jelajahi
+								Sekarang</a>
+							<a href="" class="btn btn-ghost px-6">Baca Selengkapnya</a>
+						</div>
+					</div>
+					<div class="mb-3 px-5 overflow-hidden">
+						<p class="text-xs sm:text-sm text-neutral-400 max-w-lg mx-auto" data-aos="fade-down" data-aos-offset="0"
+							data-aos-delay="1700">JALA NUSA adalah platform digital yang
+							menghadirkan pengalaman
+							menjelajahi kekayaan alam dan budaya Indonesia.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- end banner -->
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once: true,
+			duration: 800
+		});
+	</script>
+	<script>
+		window.addEventListener('scroll', function () {
+			const navbar = document.getElementById('navbar');
+			if (window.scrollY > 0) {
+				navbar.classList.add('bg-neutral-800');
+				navbar.classList.remove('pt-8', 'lg:pt-20');
+				navbar.classList.add('py-3');
+			} else {
+				navbar.classList.remove('bg-neutral-800');
+				navbar.classList.add('pt-8', 'lg:pt-20');
+				navbar.classList.remove('py-3');
+			}
+		});
+	</script>
+</body>
+
+</html>

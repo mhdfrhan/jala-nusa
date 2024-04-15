@@ -1,0 +1,16 @@
+{
+  "name": "jalanusa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./tailwindcss/input.css -o ./public/css/style.css --watch --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^4.10.1",
+    "tailwindcss": "^3.4.3"
+  }
+}
