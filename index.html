@@ -194,6 +194,7 @@
 
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 	<script>
 		AOS.init({
 			once: true,
@@ -237,7 +238,7 @@
 			const targetCount = parseFloat(element.getAttribute('data-count'));
 			const duration = 1000;
 			const startTime = performance.now();
-			const initialValue = 0;
+			const initialValue = parseFloat(element.textContent) || 0;
 
 			function updateValue(timestamp) {
 				const elapsed = timestamp - startTime;
@@ -246,6 +247,8 @@
 				element.textContent = Math.round(currentValue).toLocaleString();
 				if (progress < 1) {
 					requestAnimationFrame(updateValue);
+				} else {
+					element.dataset.animated = true;
 				}
 			}
 
