@@ -235,9 +235,9 @@
 
 		function animateCountOnce(element) {
 			const targetCount = parseFloat(element.getAttribute('data-count'));
-			const duration = 1000; // Durasi animasi dalam milidetik
+			const duration = 1000;
 			const startTime = performance.now();
-			const initialValue = parseFloat(element.textContent) || 0;
+			const initialValue = 0;
 
 			function updateValue(timestamp) {
 				const elapsed = timestamp - startTime;
@@ -246,18 +246,14 @@
 				element.textContent = Math.round(currentValue).toLocaleString();
 				if (progress < 1) {
 					requestAnimationFrame(updateValue);
-				} else {
-					element.dataset.animated = true;
 				}
 			}
 
 			requestAnimationFrame(updateValue);
 		}
 
-		// Panggil animateIfVisible() secara manual saat halaman dimuat
 		document.addEventListener('DOMContentLoaded', animateIfVisible);
 
-		// Tambahkan event listener untuk event scroll dan resize
 		window.addEventListener('scroll', animateIfVisible);
 		window.addEventListener('resize', animateIfVisible);
 
