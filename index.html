@@ -18,8 +18,8 @@
 <body>
 	<!-- navbar -->
 
-	<nav class="fixed top-0 left-0 right-0 w-full pt-8 lg:pt-20 duration-500 ease-in-out z-50" id="navbar">
-		<div class="container mx-auto px-5  lg:px-20">
+	<nav class="fixed top-0 left-0 right-0 z-50 w-full pt-8 duration-500 ease-in-out lg:pt-20" id="navbar">
+		<div class="container px-5 mx-auto lg:px-20">
 			<div class="flex items-center justify-between overflow-hidden">
 				<div data-aos="fade-right">
 					<a href="">
@@ -30,7 +30,7 @@
 					<div class="drawer drawer-end">
 						<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
 						<div class="drawer-content" data-aos="fade-left" data-aos-delay="250">
-							<label for="my-drawer-1" class="drawer-button cursor-pointer">
+							<label for="my-drawer-1" class="cursor-pointer drawer-button">
 								<svg class="w-9 h-9 lg:w-[67px] lg:h-[25px]" viewBox="0 0 67 25" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<line x1="67" y1="0.75" x2="17" y2="0.75" stroke="white" stroke-width="1.5" />
@@ -39,47 +39,47 @@
 								</svg>
 							</label>
 						</div>
-						<div class="drawer-side w-full">
+						<div class="w-full drawer-side">
 							<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
 							<ul class="menu p-4 w-[70%] lg:w-[60%] 2xl:w-1/3 min-h-full bg-neutral-800 text-neutral-300">
 								<!-- Sidebar content here -->
 								<li
-									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
 									<div class="flex items-center justify-between">
 										<a>Beranda</a>
 										<span class="block text-xs sm:text-sm">01</span>
 									</div>
 								</li>
 								<li
-									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
 									<div class="flex items-center justify-between">
 										<a>Tentang Kami</a>
 										<span class="block text-xs sm:text-sm">02</span>
 									</div>
 								</li>
 								<li
-									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
 									<div class="flex items-center justify-between">
 										<a>Wisata Alam</a>
 										<span class="block text-xs sm:text-sm">03</span>
 									</div>
 								</li>
 								<li
-									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
 									<div class="flex items-center justify-between">
 										<a>Budaya Nusantara</a>
 										<span class="block text-xs sm:text-sm">04</span>
 									</div>
 								</li>
 								<li
-									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
 									<div class="flex items-center justify-between">
 										<a>Artikel</a>
 										<span class="block text-xs sm:text-sm">05</span>
 									</div>
 								</li>
 								<li
-									class="hover:border-neutral-300 duration-300 sm:text-lg md:text-2xl border-b border-neutral-700 pb-3 mb-3">
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
 									<div class="flex items-center justify-between">
 										<a>Kontak Kami</a>
 										<span class="block text-xs sm:text-sm">06</span>
@@ -99,10 +99,10 @@
 	<!-- banner -->
 
 	<section>
-		<div class="container mx-auto px-5 pt-28 lg:px-14 lg:pt-14 overflow-hidden">
+		<div class="container px-5 mx-auto overflow-hidden pt-28 lg:px-14 lg:pt-14">
 			<div class="h-[460px] md:h-[550px] flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
 				style="background-image: url('public/img/banner.png');">
-				<div class="max-w-xl px-3 mx-auto text-center flex flex-col h-full justify-between overflow-hidden">
+				<div class="flex flex-col justify-between h-full max-w-xl px-3 mx-auto overflow-hidden text-center">
 					<div></div>
 					<div>
 						<h1 class="text-5xl lg:text-[85px] font-cabinet-grotesk font-medium tracking-wide" data-aos="zoom-in"
@@ -111,15 +111,15 @@
 							<p class="md:text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="900">Jelaha Alam dan Budaya Nusantara
 							</p>
 						</div>
-						<div class="flex flex-wrap items-center gap-3 justify-center" data-aos="fade-left" data-aos-delay="1400">
+						<div class="flex flex-wrap items-center justify-center gap-3" data-aos="fade-left" data-aos-delay="1400">
 							<a href=""
-								class="btn bg-white/80 backdrop-blur text-neutral-900 hover:text-white hover:bg-transparent hover:border-white duration-300 sm:px-8">Jelajahi
+								class="duration-300 btn bg-white/80 backdrop-blur text-neutral-900 hover:text-white hover:bg-transparent hover:border-white sm:px-8">Jelajahi
 								Sekarang</a>
 							<a href="" class="btn btn-ghost sm:px-6">Baca Selengkapnya</a>
 						</div>
 					</div>
-					<div class="mb-3 px-5 overflow-hidden">
-						<p class="text-xs sm:text-sm text-neutral-400 max-w-lg mx-auto" data-aos="fade-down" data-aos-offset="0"
+					<div class="px-5 mb-3 overflow-hidden">
+						<p class="max-w-lg mx-auto text-xs sm:text-sm text-neutral-400" data-aos="fade-down" data-aos-offset="0"
 							data-aos-delay="1700">JALA NUSA adalah platform digital yang
 							menghadirkan pengalaman
 							menjelajahi kekayaan alam dan budaya Indonesia.</p>
@@ -135,23 +135,23 @@
 	<!-- about -->
 
 	<section class="py-8 lg:pt-14">
-		<div class="container mx-auto px-5 lg:px-14 overflow-hidden">
-			<div class="flex items-center flex-wrap -mx-7">
+		<div class="container px-5 mx-auto overflow-hidden lg:px-14">
+			<div class="flex flex-wrap items-center -mx-7">
 				<div class="w-full lg:w-[45%] px-7 mb-8 md:mb-0">
 					<img src="public/img/about.png" alt="About Jala Nusa" data-aos="zoom-in-right">
 				</div>
 				<div class="w-full lg:w-[55%] px-7 ">
 					<span class="text-[64px] text-orange inline-block leading-none mb-3" data-aos="fade-up">*</span>
-					<h1 class="uppercase text-3xl md:text-4xl lg:text-5xl font-medium" data-aos="fade-up" data-aos-delay="300">
+					<h1 class="text-3xl font-medium uppercase md:text-4xl lg:text-5xl" data-aos="fade-up" data-aos-delay="300">
 						Tentang Jala Nusa</h1>
-					<div class=" mt-6 mb-11">
+					<div class="mt-6 mb-11">
 						<p class="text-sm md:text-base text-[#888888]" data-aos="fade-up" data-aos-delay="600">JALA NUSA adalah
 							wadah bagi para penjelajah alam dan pecinta budaya untuk mengungkap keindahan tersembunyi Nusantara. Kami
 							hadir untuk membagikan petualangan mengeksplorasi keajaiban alam dan memperkenalkan kekayaan tradisi
 							budaya dari Sabang hingga Merauke.</p>
 					</div>
 					<div class="inline-block" data-aos="fade-up" data-aos-delay="900">
-						<a href="" class="btn bg-orange hover:bg-neutral-600 hover:text-white px-8">Selengkapnya</a>
+						<a href="" class="px-8 btn bg-orange hover:bg-neutral-600 hover:text-white">Selengkapnya</a>
 					</div>
 				</div>
 			</div>
@@ -162,9 +162,9 @@
 
 
 	<section class="py-8 lg:py-14">
-		<div class="container mx-auto px-5 lg:px-14">
+		<div class="container px-5 mx-auto lg:px-14">
 			<div class="bg-[#212121] py-8 lg:py-12 px-4">
-				<div class="grid justify-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+				<div class="grid grid-cols-2 gap-4 justify-items-center md:grid-cols-3 lg:grid-cols-4">
 					<div data-aos="zoom-in">
 						<h1 id="pulauCount" class="font-cabinet-grotesk text-4xl sm:text-5xl lg:text-[64px] text-center"
 							data-count="17508">0</h1>
