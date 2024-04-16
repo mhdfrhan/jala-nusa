@@ -113,7 +113,7 @@
 						</div>
 						<div class="flex flex-wrap items-center gap-3 justify-center" data-aos="fade-left" data-aos-delay="1400">
 							<a href=""
-								class="btn bg-primary border-primary hover:bg-white hover:text-neutral-900 hover:border-white sm:px-8">Jelajahi
+								class="btn bg-white/80 backdrop-blur text-neutral-900 hover:text-white hover:bg-transparent hover:border-white duration-300 sm:px-8">Jelajahi
 								Sekarang</a>
 							<a href="" class="btn btn-ghost sm:px-6">Baca Selengkapnya</a>
 						</div>
@@ -164,7 +164,7 @@
 	<section class="py-8 lg:py-14">
 		<div class="container mx-auto px-5 lg:px-14">
 			<div class="bg-[#212121] py-8 lg:py-12 px-4">
-				<div class="grid justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+				<div class="grid justify-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 					<div data-aos="zoom-in">
 						<h1 id="pulauCount" class="font-cabinet-grotesk text-4xl sm:text-5xl lg:text-[64px] text-center"
 							data-count="17508">0</h1>
@@ -214,6 +214,15 @@
 			}
 		});
 
+		function animateIfVisible() {
+			const elements = document.querySelectorAll('.font-cabinet-grotesk[data-count]');
+			elements.forEach(element => {
+				if (isInViewport(element) && !element.dataset.animated) {
+					animateCountOnce(element);
+				}
+			});
+		}
+
 		function isInViewport(element) {
 			const rect = element.getBoundingClientRect();
 			return (
@@ -227,35 +236,31 @@
 		function animateCountOnce(element) {
 			const targetCount = parseFloat(element.getAttribute('data-count'));
 			const duration = 1000; // Durasi animasi dalam milidetik
-			let startTime = null;
+			const startTime = performance.now();
+			const initialValue = parseFloat(element.textContent) || 0;
 
-			function step(timestamp) {
-				if (!startTime) startTime = timestamp;
-				const progress = timestamp - startTime;
-				const increment = targetCount / duration;
-				const currentCount = Math.min(increment * progress, targetCount);
-				element.textContent = currentCount.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-				if (progress < duration) {
-					window.requestAnimationFrame(step);
+			function updateValue(timestamp) {
+				const elapsed = timestamp - startTime;
+				const progress = Math.min(elapsed / duration, 1);
+				const currentValue = initialValue + (targetCount - initialValue) * progress;
+				element.textContent = Math.round(currentValue).toLocaleString();
+				if (progress < 1) {
+					requestAnimationFrame(updateValue);
 				} else {
-					element.textContent = targetCount.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 }); 
+					element.dataset.animated = true;
 				}
 			}
 
-			window.requestAnimationFrame(step);
+			requestAnimationFrame(updateValue);
 		}
 
-		function handleScroll() {
-			const elements = document.querySelectorAll('.font-cabinet-grotesk[data-count]');
-			elements.forEach(element => {
-				if (isInViewport(element)) {
-					animateCountOnce(element);
-					window.removeEventListener('scroll', handleScroll);
-				}
-			});
-		}
+		// Panggil animateIfVisible() secara manual saat halaman dimuat
+		document.addEventListener('DOMContentLoaded', animateIfVisible);
 
-		window.addEventListener('scroll', handleScroll);
+		// Tambahkan event listener untuk event scroll dan resize
+		window.addEventListener('scroll', animateIfVisible);
+		window.addEventListener('resize', animateIfVisible);
+
 	</script>
 </body>
 
