@@ -102,7 +102,7 @@
 		<div class="container mx-auto px-5 pt-28 lg:px-14 lg:pt-14 overflow-hidden">
 			<div class="h-[460px] md:h-[550px] flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
 				style="background-image: url('public/img/banner.png');">
-				<div class="max-w-xl mx-auto text-center flex flex-col h-full justify-between overflow-hidden">
+				<div class="max-w-xl px-3 mx-auto text-center flex flex-col h-full justify-between overflow-hidden">
 					<div></div>
 					<div>
 						<h1 class="text-5xl lg:text-[85px] font-cabinet-grotesk font-medium tracking-wide" data-aos="zoom-in"
@@ -113,9 +113,9 @@
 						</div>
 						<div class="flex flex-wrap items-center gap-3 justify-center" data-aos="fade-left" data-aos-delay="1400">
 							<a href=""
-								class="btn bg-primary border-primary hover:bg-white hover:text-neutral-900 hover:border-white px-8">Jelajahi
+								class="btn bg-primary border-primary hover:bg-white hover:text-neutral-900 hover:border-white sm:px-8">Jelajahi
 								Sekarang</a>
-							<a href="" class="btn btn-ghost px-6">Baca Selengkapnya</a>
+							<a href="" class="btn btn-ghost sm:px-6">Baca Selengkapnya</a>
 						</div>
 					</div>
 					<div class="mb-3 px-5 overflow-hidden">
@@ -130,6 +130,67 @@
 	</section>
 
 	<!-- end banner -->
+
+
+	<!-- about -->
+
+	<section class="py-8 lg:pt-14">
+		<div class="container mx-auto px-5 lg:px-14 overflow-hidden">
+			<div class="flex items-center flex-wrap -mx-7">
+				<div class="w-full lg:w-[45%] px-7 mb-8 md:mb-0">
+					<img src="public/img/about.png" alt="About Jala Nusa" data-aos="zoom-in-right">
+				</div>
+				<div class="w-full lg:w-[55%] px-7 ">
+					<span class="text-[64px] text-orange inline-block leading-none mb-3" data-aos="fade-up">*</span>
+					<h1 class="uppercase text-3xl md:text-4xl lg:text-5xl font-medium" data-aos="fade-up" data-aos-delay="300">
+						Tentang Jala Nusa</h1>
+					<div class=" mt-6 mb-11">
+						<p class="text-sm md:text-base text-[#888888]" data-aos="fade-up" data-aos-delay="600">JALA NUSA adalah
+							wadah bagi para penjelajah alam dan pecinta budaya untuk mengungkap keindahan tersembunyi Nusantara. Kami
+							hadir untuk membagikan petualangan mengeksplorasi keajaiban alam dan memperkenalkan kekayaan tradisi
+							budaya dari Sabang hingga Merauke.</p>
+					</div>
+					<div class="inline-block" data-aos="fade-up" data-aos-delay="900">
+						<a href="" class="btn bg-orange hover:bg-neutral-600 hover:text-white px-8">Selengkapnya</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- end about -->
+
+
+	<section class="py-8 lg:py-14">
+		<div class="container mx-auto px-5 lg:px-14">
+			<div class="bg-[#212121] py-8 lg:py-12 px-4">
+				<div class="grid justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+					<div data-aos="zoom-in">
+						<h1 id="pulauCount" class="font-cabinet-grotesk text-4xl sm:text-5xl lg:text-[64px] text-center"
+							data-count="17508">0</h1>
+						<p class="text-center text-[#969696] text-lg font-medium md:text-xl font-cabinet-grotesk">Pulau</p>
+					</div>
+					<div data-aos="zoom-in" data-aos-delay="150">
+						<h1 id="provinsiCount" class="font-cabinet-grotesk text-4xl sm:text-5xl lg:text-[64px] text-center"
+							data-count="38">0</h1>
+						<p class="text-center text-[#969696] text-lg font-medium md:text-xl font-cabinet-grotesk">Provinsi</p>
+					</div>
+					<div data-aos="zoom-in" data-aos-delay="300">
+						<h1 id="warisanCount" class="font-cabinet-grotesk text-4xl sm:text-5xl lg:text-[64px] text-center"
+							data-count="1941">0</h1>
+						<p class="text-center text-[#969696] text-lg font-medium md:text-xl font-cabinet-grotesk">Warisan Budaya</p>
+					</div>
+					<div data-aos="zoom-in" data-aos-delay="450">
+						<h1 id="sukuCount" class="font-cabinet-grotesk text-4xl sm:text-5xl lg:text-[64px] text-center"
+							data-count="1340">0</h1>
+						<p class="text-center text-[#969696] text-lg font-medium md:text-xl font-cabinet-grotesk">Suku Bangsa</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -152,6 +213,49 @@
 				navbar.classList.remove('py-3');
 			}
 		});
+
+		function isInViewport(element) {
+			const rect = element.getBoundingClientRect();
+			return (
+				rect.top >= 0 &&
+				rect.left >= 0 &&
+				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			);
+		}
+
+		function animateCountOnce(element) {
+			const targetCount = parseFloat(element.getAttribute('data-count'));
+			const duration = 1000; // Durasi animasi dalam milidetik
+			let startTime = null;
+
+			function step(timestamp) {
+				if (!startTime) startTime = timestamp;
+				const progress = timestamp - startTime;
+				const increment = targetCount / duration;
+				const currentCount = Math.min(increment * progress, targetCount);
+				element.textContent = currentCount.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+				if (progress < duration) {
+					window.requestAnimationFrame(step);
+				} else {
+					element.textContent = targetCount.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 }); 
+				}
+			}
+
+			window.requestAnimationFrame(step);
+		}
+
+		function handleScroll() {
+			const elements = document.querySelectorAll('.font-cabinet-grotesk[data-count]');
+			elements.forEach(element => {
+				if (isInViewport(element)) {
+					animateCountOnce(element);
+					window.removeEventListener('scroll', handleScroll);
+				}
+			});
+		}
+
+		window.addEventListener('scroll', handleScroll);
 	</script>
 </body>
 

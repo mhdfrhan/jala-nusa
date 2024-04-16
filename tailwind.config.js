@@ -10,6 +10,9 @@ module.exports = {
 			fontFamily: {
 				'sans': ['"Inter"', ...defaultTheme.fontFamily.sans],
 				'cabinet-grotesk' : "'Cabinet Grotesk', sans-serif"
+			},
+			colors: {
+				orange: '#C94B04'
 			}
 		},
   },
