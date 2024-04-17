@@ -25,25 +25,21 @@
 
 	<!-- navbar -->
 
-	<nav class="fixed top-0 left-0 right-0 z-50 w-full pt-8 duration-500 ease-in-out lg:pt-20" id="navbar">
-		<div class="container px-5 mx-auto lg:px-20">
-			<div class="flex items-center justify-between overflow-hidden">
-				<div data-aos="fade-right">
+	<nav class="fixed top-0 left-0 right-0 z-50 w-full pt-8 duration-500 ease-in-out lg:pt-20 rounded-b-3xl" id="navbar">
+		<div class="container px-5 mx-auto ">
+			<div class="flex items-center justify-between overflow-hidden ">
+				<div class="lg:pl-16" data-aos="fade-down">
 					<a href="">
-						<img src="public/img/logo.png" class="w-[150px]" alt="Logo">
+						<img src="public/img/logo.png" class="w-[150px] " alt="Logo">
 					</a>
 				</div>
 				<div>
 					<div class="drawer drawer-end">
 						<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
-						<div class="drawer-content" data-aos="fade-left" data-aos-delay="250">
+						<div class="drawer-content lg:pr-14 lg:py-4 lg:pl-6 lg:rounded-l-[25px] " data-aos="fade-left"
+							data-aos-delay="250">
 							<label for="my-drawer-1" class="cursor-pointer drawer-button">
-								<svg class="w-9 h-9 lg:w-[67px] lg:h-[25px]" viewBox="0 0 67 25" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<line x1="67" y1="0.75" x2="17" y2="0.75" stroke="white" stroke-width="1.5" />
-									<line x1="67" y1="23.75" x2="17" y2="23.75" stroke="white" stroke-width="1.5" />
-									<line x1="50" y1="11.75" y2="11.75" stroke="white" stroke-width="1.5" />
-								</svg>
+								<img class="w-9 h-9 lg:w-[67px] lg:h-[25px]" src="public/icons/menu.svg" alt="">
 							</label>
 						</div>
 						<div class="w-full drawer-side">
@@ -107,7 +103,8 @@
 
 	<section>
 		<div class="container px-5 mx-auto overflow-hidden pt-28 lg:px-14 pb-8 lg:pb-0 lg:pt-14">
-			<div class="h-[460px] md:h-[550px] flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
+			<div
+				class="h-[460px] md:h-[550px] flex items-center justify-center bg-cover bg-center bg-no-repeat relative rounded-[30px] overflow-hidden"
 				style="background-image: url('public/img/banner.png');">
 				<div class="flex flex-col justify-between h-full max-w-xl px-3 mx-auto overflow-hidden text-center">
 					<div></div>
@@ -120,9 +117,9 @@
 						</div>
 						<div class="flex flex-wrap items-center justify-center gap-3" data-aos="fade-left" data-aos-delay="1400">
 							<a href=""
-								class="duration-300 btn bg-white/80 backdrop-blur text-neutral-900 hover:text-white hover:bg-transparent hover:border-white sm:px-8">Jelajahi
+								class="btn backdrop-blur hover:bg-white/80 hover:text-neutral-800 text-white bg-transparent border-transparent border-white sm:px-8 rounded-[14px]">Jelajahi
 								Sekarang</a>
-							<a href="" class="btn btn-ghost sm:px-6">Baca Selengkapnya</a>
+							<a href="" class="btn btn-ghost sm:px-6 rounded-[14px]">Baca Selengkapnya</a>
 						</div>
 					</div>
 					<div class="px-5 mb-3 overflow-hidden">
@@ -146,7 +143,7 @@
 			<div class="relative">
 				<div id="logo-brands" class="splide" aria-label="Brands">
 					<div class="splide__track">
-						<ul class="splide__list">
+						<ul class="splide__list gap-28">
 							<li class="splide__slide">
 								<div>
 									<img src="public/img/brands/agoda.png"
@@ -204,13 +201,14 @@
 	<section class="py-8 lg:pb-14" id="tentang-kami">
 		<div class="container px-5 mx-auto overflow-hidden lg:px-14">
 			<div class="flex flex-wrap items-center -mx-7">
-				<div class="w-full lg:w-[45%] px-7 mb-8 md:mb-0">
-					<img src="public/img/about.png" alt="About Jala Nusa" data-aos="zoom-in-right">
+				<div class="w-full lg:w-[45%] px-7 mb-8 md:mb-0 hidden lg:block">
+					<img src="public/img/about.png" alt="About Jala Nusa" data-aos="zoom-in-right" class="rounded-3xl">
 				</div>
 				<div class="w-full lg:w-[55%] px-7 ">
 					<span class="text-[64px] text-orange inline-block leading-none mb-3" data-aos="fade-up">*</span>
-					<h1 class="text-4xl font-medium uppercase lg:text-5xl" data-aos="fade-up" data-aos-delay="300">
+					<h1 class="text-4xl font-medium uppercase lg:text-5xl mb-5 lg:mb-0" data-aos="fade-up" data-aos-delay="300">
 						Tentang Jala Nusa</h1>
+					<img src="public/img/about.png" alt="About Jala Nusa" data-aos="zoom-in-right" class="rounded-3xl lg:hidden">
 					<div class="mt-6 mb-11">
 						<p class="text-sm md:text-base text-[#888888]" data-aos="fade-up" data-aos-delay="600">JALA NUSA adalah
 							wadah bagi para penjelajah alam dan pecinta budaya untuk mengungkap keindahan tersembunyi Nusantara. Kami
@@ -218,7 +216,7 @@
 							budaya dari Sabang hingga Merauke.</p>
 					</div>
 					<div class="inline-block" data-aos="fade-up" data-aos-delay="900">
-						<a href="" class="px-8 btn bg-orange hover:bg-neutral-600 hover:text-white">Selengkapnya</a>
+						<a href="" class="px-8 btn bg-orange hover:bg-neutral-600 hover:text-white rounded-xl">Selengkapnya</a>
 					</div>
 				</div>
 			</div>
@@ -230,7 +228,7 @@
 
 	<section class="py-8 lg:py-14">
 		<div class="container px-5 mx-auto lg:px-14">
-			<div class="bg-[#212121] py-8 lg:py-12 px-4">
+			<div class="bg-[#212121] py-8 lg:py-12 px-4 rounded-3xl">
 				<div class="grid grid-cols-2 gap-4 justify-items-center md:grid-cols-3 lg:grid-cols-4">
 					<div data-aos="zoom-in">
 						<h1 id="pulauCount" class="font-cabinet-grotesk text-4xl sm:text-5xl lg:text-[64px] text-center"
@@ -277,7 +275,7 @@
 					<div class="splide__track">
 						<ul class="splide__list">
 							<li class="splide__slide">
-								<div class="relative group cursor-pointer">
+								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
 									<img src="public/img/wisata-alam/1.png" class="w-full object-cover" alt="">
 									<div
 										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
@@ -289,7 +287,7 @@
 								</div>
 							</li>
 							<li class="splide__slide">
-								<div class="relative group cursor-pointer">
+								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
 									<img src="public/img/wisata-alam/2.png" class="w-full object-cover" alt="">
 									<div
 										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
@@ -301,7 +299,7 @@
 								</div>
 							</li>
 							<li class="splide__slide">
-								<div class="relative group cursor-pointer">
+								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
 									<img src="public/img/wisata-alam/3.png" class="w-full object-cover" alt="">
 									<div
 										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
@@ -313,7 +311,7 @@
 								</div>
 							</li>
 							<li class="splide__slide">
-								<div class="relative group cursor-pointer">
+								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
 									<img src="public/img/wisata-alam/4.png" class="w-full object-cover" alt="">
 									<div
 										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
@@ -325,7 +323,7 @@
 								</div>
 							</li>
 							<li class="splide__slide">
-								<div class="relative group cursor-pointer">
+								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
 									<img src="public/img/wisata-alam/5.png" class="w-full object-cover" alt="">
 									<div
 										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
@@ -375,7 +373,7 @@
 				</div>
 				<div class="grid md:grid-cols-2 gap-5">
 					<div class="grid grid-cols-1 gap-5">
-						<div class="col-span-1 relative group" data-aos="zoom-in-up">
+						<div class="col-span-1 relative group rounded-2xl overflow-hidden" data-aos="zoom-in-up">
 							<img src="public/img/tarian.png" class="w-full object-cover" alt="">
 							<div
 								class="lg:absolute lg:inset-0 lg:bg-neutral-950 lg:bg-opacity-60 lg:backdrop-blur-sm lg:opacity-0 lg:group-hover:opacity-100 lg:duration-500 lg:ease-in-out lg:flex lg:flex-col lg:justify-end">
@@ -403,7 +401,8 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-span-1 relative group" data-aos="zoom-in-up" data-aos-delay="300">
+						<div class="col-span-1 relative group rounded-2xl overflow-hidden" data-aos="zoom-in-up"
+							data-aos-delay="300">
 							<img src="public/img/alat-musik.png" class="w-full object-cover" alt="">
 							<div
 								class="lg:absolute lg:inset-0 lg:bg-neutral-950 lg:bg-opacity-60 lg:backdrop-blur-sm lg:opacity-0 lg:group-hover:opacity-100 lg:duration-500 lg:ease-in-out lg:flex lg:flex-col lg:justify-end">
@@ -433,7 +432,8 @@
 						</div>
 					</div>
 					<div class="grid grid-cols-1 gap-5">
-						<div class="col-span-1 relative group" data-aos="zoom-in-up" data-aos-delay="150">
+						<div class="col-span-1 relative group rounded-2xl overflow-hidden" data-aos="zoom-in-up"
+							data-aos-delay="150">
 							<img src="public/img/makanan.png" class="w-full object-cover" alt="">
 							<div
 								class="lg:absolute lg:inset-0 lg:bg-neutral-950 lg:bg-opacity-60 lg:backdrop-blur-sm lg:opacity-0 lg:group-hover:opacity-100 lg:duration-500 lg:ease-in-out lg:flex lg:flex-col lg:justify-end">
@@ -461,7 +461,8 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-span-1 relative group" data-aos="zoom-in-up" data-aos-delay="450">
+						<div class="col-span-1 relative group rounded-2xl overflow-hidden" data-aos="zoom-in-up"
+							data-aos-delay="450">
 							<img src="public/img/rumah-tradisional.png" class="w-full object-cover" alt="">
 							<div
 								class="lg:absolute lg:inset-0 lg:bg-neutral-950 lg:bg-opacity-60 lg:backdrop-blur-sm lg:opacity-0 lg:group-hover:opacity-100 lg:duration-500 lg:ease-in-out lg:flex lg:flex-col lg:justify-end">
@@ -526,6 +527,44 @@
 	</section>
 
 
+	<section class="py-8 lg:py-14">
+		<div class="container px-5 mx-auto lg:px-14">
+			<div class="bg-neutral-800 py-8 px-4 lg:p-10 lg:py-14 rounded-3xl overflow-hidden relative">
+				<div class="flex flex-wrap -mx-5 justify-center items-center">
+					<div class="w-full lg:w-1/2 px-5">
+						<img src="public/img/mockup.png"
+							class="h-[250px] sm:h-[300px] mb-5 lg:mb-0 lg:h-[400px] mx-auto z-10 relative" alt=""
+							data-aos="fade-right">
+					</div>
+					<div class="w-full lg:w-1/2 px-5">
+						<div class="mb-10">
+							<span class="block text-orange font-medium" data-aos="fade-up">Aplikasi</span>
+							<h2 class="text-3xl lg:text-5xl !leading-tight font-medium mt-2 mb-4" data-aos="fade-up"
+								data-aos-delay="150">Dapatkan Aplikasi <br> JALA NUSA
+							</h2>
+							<p class="text-[#bababa]" data-aos="fade-up" data-aos-delay="300">
+								Dapatkan aplikasinya sekarang untuk mengetahui rekomendasi tempat-tempat yang indah untuk dikunjungi di
+								Indonesia.
+							</p>
+						</div>
+						<div class="inline-flex gap-4" data-aos="fade-up" data-aos-delay="450">
+							<a href="" class="inline-block">
+								<img src="public/img/appstore.png" alt="">
+							</a>
+							<a href="" class="inline-block">
+								<img src="public/img/playstore.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="absolute bottom-0 left-0 z-0 hidden lg:block">
+					<img src="public/icons/wave.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="public/js/script.js"></script>
@@ -542,6 +581,12 @@
 				perMove: 1,
 				drag: 'free',
 				gap: '1rem',
+				autoplay: true,
+				pauseOnHover: false,
+				pauseOnFocus: false,
+				resetProgress: false,
+				speed: 800,
+				easing: 'ease-in-out',
 				breakpoints: {
 					768: {
 						perPage: 2,
@@ -559,7 +604,7 @@
 				perPage: 5,
 				perMove: 1,
 				drag: 'free',
-				gap: '2rem',
+				gap: '0',
 				arrows: false,
 				pagination: false,
 				breakpoints: {
@@ -600,18 +645,30 @@
 
 
 
-		window.addEventListener('scroll', function () {
+		document.addEventListener('DOMContentLoaded', function () {
+			handleScroll(); // Memanggil fungsi handleScroll saat halaman dimuat
+		});
+
+		window.addEventListener('scroll', handleScroll); // Memanggil fungsi handleScroll saat terjadi scroll
+
+		function handleScroll() {
 			const navbar = document.getElementById('navbar');
+			const drawerContent = document.querySelector('.drawer-content');
+
 			if (window.scrollY > 0) {
 				navbar.classList.add('bg-neutral-800');
 				navbar.classList.remove('pt-8', 'lg:pt-20');
 				navbar.classList.add('py-3');
+				drawerContent.classList.remove('lg:bg-neutral-900');
+				drawerContent.classList.add('lg:bg-neutral-800');
 			} else {
 				navbar.classList.remove('bg-neutral-800');
 				navbar.classList.add('pt-8', 'lg:pt-20');
 				navbar.classList.remove('py-3');
+				drawerContent.classList.add('lg:bg-neutral-900');
+				drawerContent.classList.remove('lg:bg-neutral-800');
 			}
-		});
+		}
 
 	</script>
 </body>

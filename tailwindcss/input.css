@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  @apply font-sans antialiased bg-neutral-900 text-neutral-300;
+  @apply font-sans antialiased bg-neutral-900 h-[1000rem] text-neutral-300;
 }
 
 .drawer-side > :not(.drawer-overlay) {
