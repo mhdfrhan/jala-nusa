@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
 	<!-- navbar -->
 
 	<nav class="fixed top-0 left-0 right-0 z-50 w-full pt-8 duration-500 ease-in-out lg:pt-20" id="navbar">
@@ -51,45 +52,45 @@
 								<!-- Sidebar content here -->
 								<li
 									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
-									<div class="flex items-center justify-between">
-										<a>Beranda</a>
+									<a href="/" class="flex items-center justify-between">
+										<div>Beranda</div>
 										<span class="block text-xs sm:text-sm">01</span>
-									</div>
+									</a>
 								</li>
 								<li
 									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
-									<div class="flex items-center justify-between">
-										<a>Tentang Kami</a>
+									<a href="#tentang-kami" class="flex items-center justify-between">
+										<div>Tentang Kami</div>
 										<span class="block text-xs sm:text-sm">02</span>
-									</div>
+									</a>
 								</li>
 								<li
 									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
-									<div class="flex items-center justify-between">
-										<a>Wisata Alam</a>
+									<a href="#wisata-alam" class="flex items-center justify-between">
+										<div>Wisata Alam</div>
 										<span class="block text-xs sm:text-sm">03</span>
-									</div>
+									</a>
 								</li>
 								<li
 									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
-									<div class="flex items-center justify-between">
-										<a>Budaya Nusantara</a>
+									<a href="#budaya-nusantara" class="flex items-center justify-between">
+										<div>Budaya Nusantara</div>
 										<span class="block text-xs sm:text-sm">04</span>
-									</div>
+									</a>
 								</li>
 								<li
 									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
-									<div class="flex items-center justify-between">
-										<a>Artikel</a>
+									<a href="#artikel" class="flex items-center justify-between">
+										<div>Artikel</div>
 										<span class="block text-xs sm:text-sm">05</span>
-									</div>
+									</a>
 								</li>
 								<li
 									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
-									<div class="flex items-center justify-between">
-										<a>Kontak Kami</a>
+									<a href="#kontak-kami" class="flex items-center justify-between">
+										<div>Kontak Kami</div>
 										<span class="block text-xs sm:text-sm">06</span>
-									</div>
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -105,7 +106,7 @@
 	<!-- banner -->
 
 	<section>
-		<div class="container px-5 mx-auto overflow-hidden pt-28 lg:px-14 lg:pt-14">
+		<div class="container px-5 mx-auto overflow-hidden pt-28 lg:px-14 pb-8 lg:pb-0 lg:pt-14">
 			<div class="h-[460px] md:h-[550px] flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
 				style="background-image: url('public/img/banner.png');">
 				<div class="flex flex-col justify-between h-full max-w-xl px-3 mx-auto overflow-hidden text-center">
@@ -138,9 +139,69 @@
 	<!-- end banner -->
 
 
-	<!-- about -->
+	<!-- logo brands -->
 
 	<section class="py-8 lg:pt-14">
+		<div class="container px-5 mx-auto overflow-hidden lg:px-14">
+			<div class="relative">
+				<div id="logo-brands" class="splide" aria-label="Brands">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div>
+									<img src="public/img/brands/agoda.png"
+										class="h-10 opacity-50 cursor-pointer hover:opacity-100 duration-300" alt="">
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div>
+									<img src="public/img/brands/bookingcom.png"
+										class="h-10 opacity-50 cursor-pointer hover:opacity-100 duration-300" alt="">
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div>
+									<img src="public/img/brands/google.png"
+										class="h-10 opacity-50 cursor-pointer hover:opacity-100 duration-300" alt="">
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div>
+									<img src="public/img/brands/reddoorz.png"
+										class="h-10 opacity-50 cursor-pointer hover:opacity-100 duration-300" alt="">
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div>
+									<img src="public/img/brands/tiketcom.png"
+										class="h-10 opacity-50 cursor-pointer hover:opacity-100 duration-300" alt="">
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div>
+									<img src="public/img/brands/traveloka.webp"
+										class="h-10 opacity-50 cursor-pointer hover:opacity-100 duration-300" alt="">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					class="absolute left-0 bottom-0 top-0 bg-gradient-to-r from-neutral-900 via-neutral-900/70 to-transparent w-20 sm:w-32 lg:w-56 h-full">
+				</div>
+				<div
+					class="absolute right-0 bottom-0 top-0 bg-gradient-to-l from-neutral-900 via-neutral-900/70 to-transparent w-20 sm:w-32 lg:w-56 h-full">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- end logo brands -->
+
+
+	<!-- about -->
+
+	<section class="py-8 lg:pb-14" id="tentang-kami">
 		<div class="container px-5 mx-auto overflow-hidden lg:px-14">
 			<div class="flex flex-wrap items-center -mx-7">
 				<div class="w-full lg:w-[45%] px-7 mb-8 md:mb-0">
@@ -198,7 +259,7 @@
 
 	<!-- wisata alam -->
 
-	<section class="py-8 lg:py-14">
+	<section class="py-8 lg:py-14" id="wisata-alam">
 		<div class="container px-5 mx-auto lg:px-14">
 			<div class="flex flex-wrap items-end justify-between gap-3 mb-14 overflow-hidden">
 				<div>
@@ -212,7 +273,7 @@
 					keagungan alam Nusantara menanti untuk diselami.</p>
 			</div>
 			<div>
-				<div id="wisata-alam" class="splide" aria-label="Wisata Alam">
+				<div id="wisata-alam-slide" class="splide" aria-label="Wisata Alam">
 					<div class="splide__track">
 						<ul class="splide__list">
 							<li class="splide__slide">
@@ -304,19 +365,166 @@
 
 	<!-- budaya nusantara -->
 
-	<section class="py-8 lg:py-14">
+	<section class="py-8 lg:py-14" id="budaya-nusantara">
 		<div class="container px-5 mx-auto lg:px-14">
 			<div class="overflow-hidden">
-				<div>
+				<div class="mb-14">
 					<span class="text-[64px] text-orange inline-block leading-none mb-3" data-aos="fade-right">*</span>
 					<h1 class="text-4xl font-medium uppercase lg:text-5xl" data-aos="fade-right" data-aos-delay="300">
 						Budaya Nusantara</h1>
+				</div>
+				<div class="grid md:grid-cols-2 gap-5">
+					<div class="grid grid-cols-1 gap-5">
+						<div class="col-span-1 relative group" data-aos="zoom-in-up">
+							<img src="public/img/tarian.png" class="w-full object-cover" alt="">
+							<div
+								class="lg:absolute lg:inset-0 lg:bg-neutral-950 lg:bg-opacity-60 lg:backdrop-blur-sm lg:opacity-0 lg:group-hover:opacity-100 lg:duration-500 lg:ease-in-out lg:flex lg:flex-col lg:justify-end">
+								<div class="w-full hidden lg:flex">
+									<a href="#"
+										class="bg-neutral-800 hover:bg-orange text-xl sm:text-2xl lg:text-3xl uppercase font-cabinet-grotesk font-semibold h-16 py-2 sm:h-20 flex items-center px-6 w-full transition-colors duration-300">
+										Tarian Daerah</a>
+									<a href="#" class="bg-orange h-16 py-2 sm:h-20 flex items-center px-8">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+											stroke="currentColor" class="w-6 h-6 lg:w-9 lg:h-9">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="w-full flex lg:hidden">
+								<a href="#"
+									class="bg-neutral-800 hover:bg-orange text-xl sm:text-2xl lg:text-3xl uppercase font-cabinet-grotesk font-semibold h-16 py-2 sm:h-20 flex items-center px-6 w-full transition-colors duration-300">
+									Tarian Daerah</a>
+								<a href="#" class="bg-orange h-16 py-2 sm:h-20 flex items-center px-8">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+										stroke="currentColor" class="w-6 h-6 lg:w-9 lg:h-9">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="col-span-1 relative group" data-aos="zoom-in-up" data-aos-delay="300">
+							<img src="public/img/alat-musik.png" class="w-full object-cover" alt="">
+							<div
+								class="lg:absolute lg:inset-0 lg:bg-neutral-950 lg:bg-opacity-60 lg:backdrop-blur-sm lg:opacity-0 lg:group-hover:opacity-100 lg:duration-500 lg:ease-in-out lg:flex lg:flex-col lg:justify-end">
+								<div class="w-full hidden lg:flex">
+									<a href="#"
+										class="bg-neutral-800 hover:bg-orange text-xl sm:text-2xl lg:text-3xl uppercase font-cabinet-grotesk font-semibold h-16 py-2 sm:h-20 flex items-center px-6 w-full transition-colors duration-300">
+										Alat Musik Daerah</a>
+									<a href="#" class="bg-orange h-16 py-2 sm:h-20 flex items-center px-8">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+											stroke="currentColor" class="w-6 h-6 lg:w-9 lg:h-9">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="w-full flex lg:hidden">
+								<a href="#"
+									class="bg-neutral-800 hover:bg-orange text-xl sm:text-2xl lg:text-3xl uppercase font-cabinet-grotesk font-semibold h-16 py-2 sm:h-20 flex items-center px-6 w-full transition-colors duration-300">
+									Alat Musik</a>
+								<a href="#" class="bg-orange h-16 py-2 sm:h-20 flex items-center px-8">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+										stroke="currentColor" class="w-6 h-6 lg:w-9 lg:h-9">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid grid-cols-1 gap-5">
+						<div class="col-span-1 relative group" data-aos="zoom-in-up" data-aos-delay="150">
+							<img src="public/img/makanan.png" class="w-full object-cover" alt="">
+							<div
+								class="lg:absolute lg:inset-0 lg:bg-neutral-950 lg:bg-opacity-60 lg:backdrop-blur-sm lg:opacity-0 lg:group-hover:opacity-100 lg:duration-500 lg:ease-in-out lg:flex lg:flex-col lg:justify-end">
+								<div class="w-full hidden lg:flex">
+									<a href="#"
+										class="bg-neutral-800 hover:bg-orange text-xl sm:text-2xl lg:text-3xl uppercase font-cabinet-grotesk font-semibold h-16 py-2 sm:h-20 flex items-center px-6 w-full transition-colors duration-300">
+										Makanan Daerah</a>
+									<a href="#" class="bg-orange h-16 py-2 sm:h-20 flex items-center px-8">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+											stroke="currentColor" class="w-6 h-6 lg:w-9 lg:h-9">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="w-full flex lg:hidden">
+								<a href="#"
+									class="bg-neutral-800 hover:bg-orange text-xl sm:text-2xl lg:text-3xl uppercase font-cabinet-grotesk font-semibold h-16 py-2 sm:h-20 flex items-center px-6 w-full transition-colors duration-300">
+									Makanan Daerah</a>
+								<a href="#" class="bg-orange h-16 py-2 sm:h-20 flex items-center px-8">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+										stroke="currentColor" class="w-6 h-6 lg:w-9 lg:h-9">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="col-span-1 relative group" data-aos="zoom-in-up" data-aos-delay="450">
+							<img src="public/img/rumah-tradisional.png" class="w-full object-cover" alt="">
+							<div
+								class="lg:absolute lg:inset-0 lg:bg-neutral-950 lg:bg-opacity-60 lg:backdrop-blur-sm lg:opacity-0 lg:group-hover:opacity-100 lg:duration-500 lg:ease-in-out lg:flex lg:flex-col lg:justify-end">
+								<div class="w-full hidden lg:flex">
+									<a href="#"
+										class="bg-neutral-800 hover:bg-orange text-xl sm:text-2xl lg:text-3xl uppercase font-cabinet-grotesk font-semibold h-16 py-2 sm:h-20 flex items-center px-6 w-full transition-colors duration-300">
+										Rumah Tradisional</a>
+									<a href="#" class="bg-orange h-16 py-2 sm:h-20 flex items-center px-8">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+											stroke="currentColor" class="w-6 h-6 lg:w-9 lg:h-9">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="w-full flex lg:hidden">
+								<a href="#"
+									class="bg-neutral-800 hover:bg-orange text-xl sm:text-2xl lg:text-3xl uppercase font-cabinet-grotesk font-semibold h-16 py-2 sm:h-20 flex items-center px-6 w-full transition-colors duration-300">
+									Rumah Tradisional</a>
+								<a href="#" class="bg-orange h-16 py-2 sm:h-20 flex items-center px-8">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+										stroke="currentColor" class="w-6 h-6 lg:w-9 lg:h-9">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- end budaya nusantara -->
+
+
+	<section class="py-8 lg:py-14">
+		<div class="container px-5 mx-auto lg:px-14">
+			<div class="relative">
+				<div id="jala-nusa" class="splide" aria-label="Jala Nusa">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide !mr-5">
+								<div class="text-5xl lg:text-[85px] font-cabinet-grotesk text-[#6C6C6C] font-medium select-none">
+									JALA NUSA
+									<span class="text-orange select-none inline-block">
+										•
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					class="absolute left-0 bottom-0 top-0 bg-gradient-to-r from-neutral-900 via-neutral-900/70 to-transparent w-20 sm:w-32 lg:w-56 h-full">
+				</div>
+				<div
+					class="absolute right-0 bottom-0 top-0 bg-gradient-to-l from-neutral-900 via-neutral-900/70 to-transparent w-20 sm:w-32 lg:w-56 h-full">
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -326,10 +534,9 @@
 			once: true,
 			duration: 800
 		});
-	</script>
-	<script>
+
 		document.addEventListener('DOMContentLoaded', function () {
-			var splide = new Splide('#wisata-alam', {
+			var splideWisataAlam = new Splide('#wisata-alam-slide', {
 				type: 'loop',
 				perPage: 3,
 				perMove: 1,
@@ -343,13 +550,55 @@
 						perPage: 1,
 					},
 				},
+			});
+
+			splideWisataAlam.mount();
+
+			var splideBrands = new Splide('#logo-brands', {
+				type: 'loop',
+				perPage: 5,
+				perMove: 1,
+				drag: 'free',
+				gap: '2rem',
+				arrows: false,
+				pagination: false,
+				breakpoints: {
+					1280: {
+						perPage: 4,
+					},
+					768: {
+						perPage: 3,
+					},
+					640: {
+						perPage: 2,
+					}
+				},
 				autoScroll: {
 					speed: 1,
 				},
 			});
 
-			splide.mount(window.splide.Extensions);
+			splideBrands.mount(window.splide.Extensions);
+
+			var splideJalaNusa = new Splide('#jala-nusa', {
+				type: 'loop',
+				perPage: 3,
+				perMove: 1,
+				drag: false,
+				arrows: false,
+				gap: '0',
+				pagination: false,
+				focus: 'center',
+				autoScroll: {
+					speed: 1,
+					pauseOnHover: false,
+				},
+			});
+
+			splideJalaNusa.mount(window.splide.Extensions);
 		});
+
+
 
 		window.addEventListener('scroll', function () {
 			const navbar = document.getElementById('navbar');

@@ -1,49 +1,53 @@
 function animateIfVisible() {
-	const elements = document.querySelectorAll('.font-cabinet-grotesk[data-count]');
-	elements.forEach(element => {
-		if (isInViewport(element) && !element.dataset.animated) {
-			animateCountOnce(element);
-		}
-	});
+  const elements = document.querySelectorAll(
+    ".font-cabinet-grotesk[data-count]"
+  );
+  elements.forEach((element) => {
+    if (isInViewport(element) && !element.dataset.animated) {
+      animateCountOnce(element);
+    }
+  });
 }
 
 function isInViewport(element) {
-	const rect = element.getBoundingClientRect();
-	return (
-		rect.top >= 0 &&
-		rect.left >= 0 &&
-		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-	);
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
 }
 
 function animateCountOnce(element) {
-	if (element.dataset.animating) return;
+  if (element.dataset.animating) return;
 
-	const targetCount = parseFloat(element.getAttribute('data-count'));
-	const duration = 1000;
-	const startTime = performance.now();
-	const initialValue = parseFloat(element.textContent) || 0;
+  const targetCount = parseFloat(element.getAttribute("data-count"));
+  const duration = 1000;
+  const startTime = performance.now();
+  const initialValue = parseFloat(element.textContent) || 0;
 
-	element.dataset.animating = true;
+  element.dataset.animating = true;
 
-	function updateValue(timestamp) {
-		const elapsed = timestamp - startTime;
-		const progress = Math.min(elapsed / duration, 1);
-		const currentValue = initialValue + (targetCount - initialValue) * progress;
-		element.textContent = Math.round(currentValue).toLocaleString();
-		if (progress < 1) {
-			requestAnimationFrame(updateValue);
-		} else {
-			element.dataset.animated = true;
-			delete element.dataset.animating;
-		}
-	}
+  function updateValue(timestamp) {
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const currentValue = initialValue + (targetCount - initialValue) * progress;
+    element.textContent = Math.round(currentValue).toLocaleString();
+    if (progress < 1) {
+      requestAnimationFrame(updateValue);
+    } else {
+      element.dataset.animated = true;
+      delete element.dataset.animating;
+    }
+  }
 
-	requestAnimationFrame(updateValue);
+  requestAnimationFrame(updateValue);
 }
 
-document.addEventListener('DOMContentLoaded', animateIfVisible);
+document.addEventListener("DOMContentLoaded", animateIfVisible);
 
-window.addEventListener('scroll', animateIfVisible);
-window.addEventListener('resize', animateIfVisible);
+window.addEventListener("scroll", animateIfVisible);
+window.addEventListener("resize", animateIfVisible);
+
