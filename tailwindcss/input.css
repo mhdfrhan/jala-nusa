@@ -14,3 +14,17 @@ body {
 .drawer-side > :not(.drawer-overlay) {
   @apply duration-500;
 }
+
+.drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
+  @apply bg-neutral-950/60 backdrop-blur-sm duration-500;
+}
+
+.menu li > :not(ul, .menu-title, details, .btn):active {
+  @apply bg-transparent;
+}
+
+:where(
+    .menu li:not(.menu-title, .disabled) > :not(ul, details, .menu-title)
+  ):not(summary, .active, .btn):focus {
+  @apply bg-transparent;
+}
