@@ -23,6 +23,13 @@
 
 <body>
 
+
+	<!-- loader -->
+	<div
+		class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-[100] bg-neutral-950/60 backdrop-blur visible opacity-100 duration-500 loader-wrapper">
+		<div class="loader"></div>
+	</div>
+
 	<!-- navbar -->
 
 	<nav class="fixed top-0 left-0 right-0 z-50 w-full pt-8 duration-500 ease-in-out lg:pt-20 rounded-b-3xl" id="navbar">
@@ -271,7 +278,7 @@
 					keajaiban ciptaan Sang Pencipta. Dari puncak gunungnya yang megah, hingga lautan birunya yang memesona,
 					keagungan alam Nusantara menanti untuk diselami.</p>
 			</div>
-			<div>
+			<div data-aos="fade-up">
 				<div id="wisata-alam-slide" class="splide" aria-label="Wisata Alam">
 					<div class="splide__track">
 						<ul class="splide__list">
@@ -578,20 +585,22 @@
 		<div class="container px-5 mx-auto lg:px-14">
 			<div class="flex flex-wrap -mx-5 gap-y-8">
 				<div class="w-full lg:w-1/2 px-5">
-					<div class="mb-4 lg:mb-6">
+					<div class="mb-4 lg:mb-6" data-aos="fade-up">
 						<img src="public/img/artikel/1.png" class="rounded-[26px] w-full" alt="">
 					</div>
 					<div>
-						<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
-						<a href="" class="block text-2xl sm:text-3xl lg:text-3xl font-medium my-3 hover:text-orange duration-300">
+						<span class="block font-medium text-neutral-400 font-cabinet-grotesk" data-aos="fade-up">25 April
+							2024</span>
+						<a href="" class="block text-2xl sm:text-3xl lg:text-3xl font-medium my-3 hover:text-orange duration-300"
+							data-aos="fade-up" data-aos-delay="100">
 							15 Pantai di Indonesia yang Gak Kalah Indah dari Maldives
 						</a>
-						<p class="text-[#7C7C7C] line-clamp-2 hidden lg:block">
+						<p class="text-[#7C7C7C] line-clamp-2 hidden lg:block" data-aos="fade-up" data-aos-delay="200">
 							Sebagai negara kepulauan, Indonesia dianugerahi jutaan lautan dan pantai yang sangat memesona. Kita
 							sebagai orang Indonesia, seharusnya bisa menjelajahi keindahan bahari dalam negeri, sebelum ke luar
 							negeri.
 						</p>
-						<div class="mt-8 hidden lg:block">
+						<div class="mt-8 hidden lg:block" data-aos="fade-up" data-aos-delay="300">
 							<a href="" class="inline-flex text-orange items-center border-b-2 border-orange group">
 								Jelajahi Sekarang
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -605,7 +614,7 @@
 				</div>
 				<div class="w-full lg:w-1/2 px-5">
 					<div class="flex flex-col gap-8">
-						<div class="lg:flex items-center gap-4">
+						<div class="lg:flex items-center gap-4" data-aos="fade-up" data-aos-delay="100">
 							<img src="public/img/artikel/2.png" class="rounded-[20px] shrink-0 w-full mb-4 lg:max-w-[160px]" alt="">
 							<div>
 								<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
@@ -615,7 +624,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="lg:flex items-center gap-4">
+						<div class="lg:flex items-center gap-4" data-aos="fade-up" data-aos-delay="150">
 							<img src="public/img/artikel/3.png" class="rounded-[20px] shrink w-full mb-4 lg:max-w-[160px]" alt="">
 							<div>
 								<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
@@ -625,7 +634,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="lg:flex items-center gap-4">
+						<div class="lg:flex items-center gap-4" data-aos="fade-up" data-aos-delay="200">
 							<img src="public/img/artikel/4.png" class="rounded-[20px] shrink w-full mb-4 lg:max-w-[160px]" alt="">
 							<div>
 								<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
@@ -635,7 +644,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="lg:flex items-center gap-4">
+						<div class="lg:flex items-center gap-4" data-aos="fade-up" data-aos-delay="250">
 							<img src="public/img/artikel/5.png" class="rounded-[20px] shrink w-full mb-4 lg:max-w-[160px]" alt="">
 							<div>
 								<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
@@ -654,123 +663,146 @@
 	<!-- end artikel -->
 
 
-	<section class="mt-8 pt-8 pb-8 overflow-hidden border-t border-neutral-800">
-		<div class="container px-5 mx-auto lg:px-14">
-			<img class="mb-10 w-40" src="public/img/logo.png" alt="">
-			<div class="flex flex-wrap items-end -m-8 mb-14">
-				<div class="w-full md:w-1/2 p-8">
-					<div class="md:max-w-md">
-						<h3 class="mb-10 text-3xl text-white">Berlangganan sekarang agar kamu tidak kelewatan info menarik lainnya
-						</h3>
-						<div
-							class="relative border border-neutral-900 focus-within:border-neutral-600 duration-300 overflow-hidden rounded-3xl">
-							<input
-								class="block w-full py-5 pl-8 pr-24 text-lg text-neutral-300 placeholder-neutral-400 bg-transparent focus:outline-none focus:ring-0"
-								type="text" placeholder="Your email adress" style="height: 72px;">
-							<a class="absolute right-0 top-0 flex items-center justify-center px-8 h-full bg-orange hover:bg-white rounded-3xl transition duration-300"
-								href="#">
-								<svg width="10" height="17" viewbox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M1.79687 15.4299L7.50188 9.72495C8.17563 9.0512 8.17563 7.9487 7.50188 7.27495L1.79688 1.56995"
-										stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-										stroke-linejoin="round"></path>
-								</svg>
-							</a>
+	<footer class="mt-8 pt-8 pb-8 overflow-hidden border-t border-neutral-800">
+		<div class="container px-5 mx-auto  lg:px-14">
+			<div class="overflow-hidden">
+				<img class="mb-10 w-40" src="public/img/logo.png" alt="" data-aos="fade-right">
+				<div class="flex flex-wrap items-end -m-8 mb-14">
+					<div class="w-full md:w-1/2 p-8">
+						<div class="md:max-w-md">
+							<h3 class="mb-10 text-3xl text-white" data-aos="fade-right" data-aos-delay="100">Berlangganan sekarang
+								agar kamu tidak kelewatan info menarik lainnya
+							</h3>
+							<div
+								class="relative border border-neutral-900 focus-within:border-neutral-600 duration-300 overflow-hidden rounded-3xl"
+								data-aos="fade-right" data-aos-delay="150">
+								<input
+									class="block w-full py-5 pl-8 pr-24 text-lg text-neutral-300 placeholder-neutral-400 bg-transparent focus:outline-none focus:ring-0"
+									type="text" placeholder="Your email adress" style="height: 72px;">
+								<a class="absolute right-0 top-0 flex items-center justify-center px-8 h-full bg-orange hover:bg-white rounded-3xl transition duration-300"
+									href="#">
+									<svg width="10" height="17" viewbox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.79687 15.4299L7.50188 9.72495C8.17563 9.0512 8.17563 7.9487 7.50188 7.27495L1.79688 1.56995"
+											stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full md:w-1/2 p-8">
+						<div class="flex flex-wrap md:justify-end -m-8 lg:-m-20">
+							<div class="w-full md:w-auto p-8 lg:p-20">
+								<h3 class="mb-6 text-lg text-white font-medium" data-aos="fade-up">Halaman</h3>
+								<ul>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="50"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Tentang Kami</a></li>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="100"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Wisata Alam</a></li>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="150"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Budaya Nusantara</a></li>
+									<li data-aos="fade-up" data-aos-delay="200"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Artikel</a></li>
+								</ul>
+							</div>
+							<div class="w-full md:w-auto p-8 lg:p-20">
+								<h3 class="mb-6 text-lg text-white font-medium" data-aos="fade-up">Perusahaan</h3>
+								<ul>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="50"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Alamat</a></li>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="100"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Karir</a></li>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="150"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Tim Kami</a></li>
+									<li data-aos="fade-up" data-aos-delay="200"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Kontak</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="w-full md:w-1/2 p-8">
-					<div class="flex flex-wrap md:justify-end -m-8 lg:-m-20">
-						<div class="w-full md:w-auto p-8 lg:p-20">
-							<h3 class="mb-6 text-lg text-white font-medium">Halaman</h3>
-							<ul>
-								<li class="mb-2.5"><a
-										class="inline-block text-lg font-medium text-neutral-300 hover:text-white transition duration-300"
-										href="#">Tentang Kami</a></li>
-								<li class="mb-2.5"><a
-										class="inline-block text-lg font-medium text-neutral-300 hover:text-white transition duration-300"
-										href="#">Wisata Alam</a></li>
-								<li class="mb-2.5"><a
-										class="inline-block text-lg font-medium text-neutral-300 hover:text-white transition duration-300"
-										href="#">Budaya Nusantara</a></li>
-								<li><a
-										class="inline-block text-lg font-medium text-neutral-300 hover:text-white transition duration-300"
-										href="#">Artikel</a></li>
-							</ul>
-						</div>
-						<div class="w-full md:w-auto p-8 lg:p-20">
-							<h3 class="mb-6 text-lg text-white font-medium">Perusahaan</h3>
-							<ul>
-								<li class="mb-2.5"><a
-										class="inline-block text-lg font-medium text-neutral-300 hover:text-white transition duration-300"
-										href="#">Alamat</a></li>
-								<li class="mb-2.5"><a
-										class="inline-block text-lg font-medium text-neutral-300 hover:text-white transition duration-300"
-										href="#">Karir</a></li>
-								<li class="mb-2.5"><a
-										class="inline-block text-lg font-medium text-neutral-300 hover:text-white transition duration-300"
-										href="#">Tim Kami</a></li>
-								<li><a
-										class="inline-block text-lg font-medium text-neutral-300 hover:text-white transition duration-300"
-										href="#">Kontak</a></li>
-							</ul>
-						</div>
+				<div class="flex flex-wrap justify-between -m-4">
+					<div class="w-auto p-4">
+						<p class="text-white text-opacity-60 font-medium" data-aos="fade-right" data-aos-offset="10"
+							data-aos-delay="100">©
+							<script>document.write(new Date().getFullYear())</script> JALA NUSA
+						</p>
 					</div>
-				</div>
-			</div>
-			<div class="flex flex-wrap justify-between -m-4">
-				<div class="w-auto p-4">
-					<p class="text-white text-opacity-60 font-medium">©
-						<script>document.write(new Date().getFullYear())</script> JALA NUSA
-					</p>
-				</div>
-				<div class="w-auto p-4">
-					<ul class="flex flex-wrap items-center -m-2 sm:-m-5">
-						<li class="p-3">
-							<a href="#" class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
-								<div class="inline-block">
-									<img src="public/icons/twitter-white.svg" alt="">
-								</div>
-							</a>
-						</li>
-						<li class="p-2">
-							<a href="#" class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
-								<div class="inline-block">
-									<img src="public/icons/linkedin-white.svg" alt="">
-								</div>
-							</a>
-						</li>
-						<li class="p-2">
-							<a href="#" class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
-								<div class="inline-block">
-									<img src="public/icons/tiktok-wh.svg" alt="">
-								</div>
-							</a>
-						</li>
-						<li class="p-2">
-							<a href="#" class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
-								<div class="inline-block">
-									<img src="public/icons/fb-white.svg" alt="">
-								</div>
-							</a>
-						</li>
-						<li class="p-2">
-							<a href="#" class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
-								<div class="inline-block">
-									<img src="public/icons/instagram-white.svg" alt="">
-								</div>
-							</a>
-						</li>
-					</ul>
+					<div class="w-auto p-4">
+						<ul class="flex flex-wrap items-center -m-2" data-aos="fade-left" data-aos-delay="200" data-aos-offset="10">
+							<li class="p-3">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="public/icons/twitter-white.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="p-2">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="public/icons/linkedin-white.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="p-2">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="public/icons/tiktok-wh.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="p-2">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="public/icons/fb-white.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="p-2">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="public/icons/instagram-white.svg" alt="">
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</footer>
 
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="public/js/script.js"></script>
 	<script>
+		document.body.style.overflow = 'hidden';
+
+		window.onload = function () {
+			// Menggunakan animasi untuk menghilangkan loader
+			var loaderWrapper = document.querySelector('.loader-wrapper');
+			loaderWrapper.style.opacity = '0';
+			loaderWrapper.style.visibility = 'hidden';
+			loaderWrapper.style.transition = 'visibility 0s 0.5s, opacity 0.5s linear';
+
+			// Mengembalikan overflow pada body ke keadaan semula
+			document.body.style.overflow = 'visible'; // Atau 'auto' tergantung kebutuhan Anda
+		}
+
 		AOS.init({
 			once: true,
 			duration: 800
