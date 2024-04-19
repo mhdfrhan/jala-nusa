@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="public/css/style.css" rel="stylesheet">
+
+	<!-- fonts -->
+	<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700,800,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+	<!-- scripts -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+
+	<!-- navbar -->
+
+	<nav class="fixed top-0 left-0 right-0 z-50 w-full pt-8 duration-500 ease-in-out lg:pt-20 rounded-b-3xl" id="navbar">
+		<div class="container px-5 mx-auto ">
+			<div class="flex items-center justify-between overflow-hidden ">
+				<div class="lg:pl-16" data-aos="fade-down">
+					<a href="/">
+						<img src="public/img/logo.png" class="w-[150px] " alt="Logo">
+					</a>
+				</div>
+				<div>
+					<div class="drawer drawer-end">
+						<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+						<div class="drawer-content lg:pr-14 lg:py-4 lg:pl-6 lg:rounded-l-[25px] " data-aos="fade-down"
+							data-aos-delay="250">
+							<label for="my-drawer-1" class="cursor-pointer drawer-button">
+								<img class="w-9 h-9 lg:w-[67px] lg:h-[25px]" src="public/icons/menu.svg" alt="">
+							</label>
+						</div>
+						<div class="w-full drawer-side">
+							<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+							<ul
+								class="menu p-4 w-[70%] lg:w-[60%] 2xl:w-1/3 min-h-full bg-neutral-800 text-neutral-300 rounded-l-3xl lg:rounded-l-[35px]">
+								<!-- Sidebar content here -->
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="/" class="flex items-center justify-between">
+										<div>Beranda</div>
+										<span class="block text-xs sm:text-sm">01</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="/tentang-kami.html" class="flex items-center justify-between">
+										<div>Tentang Kami</div>
+										<span class="block text-xs sm:text-sm">02</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="#wisata-alam" class="flex items-center justify-between">
+										<div>Wisata Alam</div>
+										<span class="block text-xs sm:text-sm">03</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="#budaya-nusantara" class="flex items-center justify-between">
+										<div>Budaya Nusantara</div>
+										<span class="block text-xs sm:text-sm">04</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="#artikel" class="flex items-center justify-between">
+										<div>Artikel</div>
+										<span class="block text-xs sm:text-sm">05</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="#kontak-kami" class="flex items-center justify-between focus:!bg-transparent">
+										<div>Kontak Kami</div>
+										<span class="block text-xs sm:text-sm">06</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- end navbar -->
+
+	<!-- banner -->
+
+	<section id="banner" class="px-5 lg:px-14 2xl:px-24 overflow-hidden pt-28 pb-8 lg:pb-0 lg:pt-14">
+		<div>
+			<div
+				class="h-[460px] md:h-[550px] 2xl:h-[750px] flex items-center justify-center bg-cover bg-bottom bg-no-repeat relative rounded-[30px] overflow-hidden "
+				style="background-image: url('public/img/banner-about.png');">
+				<div class="text-center">
+					<h1 class="text-5xl lg:text-[85px] font-cabinet-grotesk font-medium tracking-wide" data-aos="zoom-in"
+						data-aos-delay="600">TENTANG KAMI</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- end banner -->
+
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="public/js/script.js"></script>
+	<script>
+		window.addEventListener('scroll', handleScroll);
+
+		function handleScroll() {
+			const navbar = document.getElementById('navbar');
+
+			if (window.scrollY > 0) {
+				navbar.classList.add('bg-neutral-800');
+				navbar.classList.remove('pt-8', 'lg:pt-20');
+				navbar.classList.add('py-3');
+			} else {
+				navbar.classList.remove('bg-neutral-800');
+				navbar.classList.add('pt-8', 'lg:pt-20');
+				navbar.classList.remove('py-3');
+			}
+		}
+	</script>
+</body>
+
+</html>
