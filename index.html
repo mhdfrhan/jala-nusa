@@ -117,8 +117,8 @@
 				<div class="flex flex-col justify-between h-full max-w-xl px-3 mx-auto overflow-hidden text-center">
 					<div></div>
 					<div>
-						<h1 class="text-5xl lg:text-7xl 2xl:text-8xl font-cabinet-grotesk font-semibold tracking-wide" data-aos="zoom-in"
-							data-aos-delay="600">JALA NUSA</h1>
+						<h1 class="text-5xl lg:text-7xl 2xl:text-8xl font-cabinet-grotesk font-semibold tracking-wide"
+							data-aos="zoom-in" data-aos-delay="600">JALA NUSA</h1>
 						<div class="mt-2 mb-8">
 							<p class="md:text-lg lg:text-xl" data-aos="fade-up" data-aos-delay="900">Jelaha Alam dan Budaya Nusantara
 							</p>
@@ -227,7 +227,8 @@
 							budaya dari Sabang hingga Merauke.</p>
 					</div>
 					<div class="inline-block" data-aos="fade-up" data-aos-delay="900">
-						<a href="tentang-kami.html" class="px-8 btn bg-orange hover:bg-neutral-600 hover:text-white rounded-xl">Selengkapnya</a>
+						<a href="tentang-kami.html"
+							class="px-8 btn bg-orange hover:bg-neutral-600 hover:text-white rounded-xl">Selengkapnya</a>
 					</div>
 				</div>
 			</div>
@@ -286,7 +287,7 @@
 					<div class="splide__track">
 						<ul class="splide__list">
 							<li class="splide__slide">
-								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
+								<div class="relative group cursor-pointer rounded-2xl overflow-hidden" onclick="my_modal_1.showModal()">
 									<img src="public/img/wisata-alam/1.png" class="w-full object-cover" alt="">
 									<div
 										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
@@ -297,8 +298,9 @@
 									</div>
 								</div>
 							</li>
+							<!-- Repeat for each modal -->
 							<li class="splide__slide">
-								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
+								<div class="relative group cursor-pointer rounded-2xl overflow-hidden" onclick="my_modal_2.showModal()">
 									<img src="public/img/wisata-alam/2.png" class="w-full object-cover" alt="">
 									<div
 										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
@@ -310,10 +312,10 @@
 								</div>
 							</li>
 							<li class="splide__slide">
-								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
+								<div class="relative group cursor-pointer rounded-2xl overflow-hidden" onclick="my_modal_3.showModal()">
 									<img src="public/img/wisata-alam/3.png" class="w-full object-cover" alt="">
-									<div
-										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
+									<div class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 
+                    duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
 										<div class="text-center mt-8 delay-75 group-hover:mt-0 duration-500">
 											<h5 class="font-cabinet-grotesk text-3xl uppercase font-semibold">Danau Toba</h5>
 											<p class="mt-1 text-orange font-medium">Sumatera Utara</p>
@@ -324,8 +326,8 @@
 							<li class="splide__slide">
 								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
 									<img src="public/img/wisata-alam/4.png" class="w-full object-cover" alt="">
-									<div
-										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
+									<div class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 
+                    duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
 										<div class="text-center mt-8 delay-75 group-hover:mt-0 duration-500">
 											<h5 class="font-cabinet-grotesk text-3xl uppercase font-semibold">Taman Nasional Kelimutu</h5>
 											<p class="mt-1 text-orange font-medium">Nusa Tenggara Timur</p>
@@ -336,8 +338,8 @@
 							<li class="splide__slide">
 								<div class="relative group cursor-pointer rounded-2xl overflow-hidden">
 									<img src="public/img/wisata-alam/5.png" class="w-full object-cover" alt="">
-									<div
-										class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
+									<div class="absolute inset-0 bg-neutral-950 bg-opacity-60 opacity-0 group-hover:opacity-100 
+                    duration-500 ease-in-out backdrop-blur-sm flex items-center justify-center px-3">
 										<div class="text-center mt-8 delay-75 group-hover:mt-0 duration-500">
 											<h5 class="font-cabinet-grotesk text-3xl uppercase font-semibold">Pulau Pasumpahan</h5>
 											<p class="mt-1 text-orange font-medium">Sumatera Barat</p>
@@ -369,6 +371,76 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- modal -->
+	<dialog id="my_modal_1" class="modal">
+		<div class="modal-box rounded-3xl max-w-5xl w-full">
+			<div class="flex items-center justify-between gap-4">
+				<div>
+					<h3 class="font-bold text-2xl md:text-3xl lg:text-5xl capitalize">Pantai Maluk</h3>
+					<p class="mt-2 text-orange">Sumbawa Barat</p>
+				</div>
+				<a href="" class="flex items-center justify-center w-14 h-14 bg-orange rounded-full">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+					</svg>
+				</a>
+			</div>
+			<div class="mt-5 mb-4">
+				<img src="public/img/wisata-alam/1.png" class="w-full max-h-[450px] object-cover rounded-2xl" alt="">
+			</div>
+			<p></p>
+			<p class="text-lg text-neutral-300 leading-relaxed mt-4">
+				Pantai Maluk terletak di Sumbawa Barat dan dikenal dengan keindahan pasirnya yang berwarna keemasan serta
+				ombaknya yang ideal untuk berselancar. Pantai ini menawarkan panorama matahari terbenam yang spektakuler, yang
+				membuatnya menjadi tempat yang sempurna untuk bersantai di akhir hari. Selain berselancar, pengunjung juga dapat
+				menikmati berbagai aktivitas lain seperti berenang, memancing, atau sekadar berjalan-jalan di sepanjang pantai
+				sambil menikmati keindahan alam sekitarnya.
+			</p>
+			<p class="text-lg text-neutral-300 leading-relaxed mt-3">
+				Area sekitar Pantai Maluk juga dipenuhi dengan berbagai fasilitas seperti penginapan, restoran, dan kafe yang
+				dapat memenuhi kebutuhan para wisatawan. Keunikan dan keindahan alam Pantai Maluk menjadikannya destinasi yang
+				wajib dikunjungi bagi siapa saja yang berada di Sumbawa Barat.
+			</p>
+		</div>
+		<form method="dialog" class="modal-backdrop">
+			<button>close</button>
+		</form>
+	</dialog>
+	<!-- Additional modals for each slide -->
+	<dialog id="my_modal_2" class="modal">
+		<div class="modal-box rounded-3xl max-w-5xl w-full">
+			<div class="flex items-center justify-between gap-4">
+				<div>
+					<h3 class="font-bold text-2xl md:text-3xl lg:text-5xl capitalize">Pulau Padar</h3>
+					<p class="mt-2 text-orange">Nusa Tenggara Timur</p>
+				</div>
+				<a href="" class="flex items-center justify-center w-14 h-14 bg-orange rounded-full">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+					</svg>
+				</a>
+			</div>
+			<div class="mt-5 mb-4">
+				<img src="public/img/wisata-alam/2.png" class="w-full max-h-[450px] object-cover rounded-2xl" alt="">
+			</div>
+			<p class="text-lg text-neutral-300 leading-relaxed mt-4">
+				Pulau Padar adalah salah satu pulau yang terletak di Nusa Tenggara Timur, dikenal dengan pemandangan alamnya
+				yang menakjubkan dan keanekaragaman hayati. Pulau ini menawarkan pengalaman trekking yang unik dengan
+				pemandangan bukit-bukit yang dramatis dan pantai berpasir putih yang indah.
+			</p>
+			<p class="text-lg text-neutral-300 leading-relaxed mt-3">
+				Pulau ini juga merupakan tempat yang ideal untuk fotografi, snorkeling, dan menyaksikan matahari terbit atau terbenam yang spektakuler. Keindahan alam Pulau Padar menjadikannya destinasi yang sangat populer di kalangan wisatawan yang mencari petualangan dan keindahan alam.
+				Pulau ini juga merupakan tempat yang ideal untuk fotografi, snorkeling, dan menyaksikan matahari terbit atau
+				terbenam yang spektakuler. Keindahan alam Pulau Padar menjadikannya destinasi yang sangat populer di kalangan
+				wisatawan yang mencari petualangan dan keindahan alam.
+			</p>
+		</div>
+		<form method="dialog" class="modal-backdrop">
+			<button>close</button </form>
+	</dialog>
 
 	<!-- end wisata alam -->
 
@@ -623,7 +695,7 @@
 								<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
 								<a href=""
 									class="block text-2xl sm:text-3xl lg:text-xl line-clamp-2 mt-3 font-medium hover:text-orange duration-300">
-									Inilah Beberapa Tarian Indonesia yang Mendunia
+									Resep Rendang Sapi Khas Minang
 								</a>
 							</div>
 						</div>
@@ -633,7 +705,7 @@
 								<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
 								<a href=""
 									class="block text-2xl sm:text-3xl lg:text-xl line-clamp-2 mt-3 font-medium hover:text-orange duration-300">
-									Resep Rendang Sapi Khas Minang
+									Inilah Beberapa Tarian Indonesia yang Mendunia
 								</a>
 							</div>
 						</div>
@@ -643,7 +715,7 @@
 								<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
 								<a href=""
 									class="block text-2xl sm:text-3xl lg:text-xl line-clamp-2 mt-3 font-medium hover:text-orange duration-300">
-									Mempertahankan Identitas Budaya di Era Modern
+									Angklung, Warisan Budaya Kebanggaan Indonesia
 								</a>
 							</div>
 						</div>
@@ -653,7 +725,7 @@
 								<span class="block font-medium text-neutral-400 font-cabinet-grotesk">25 April 2024</span>
 								<a href=""
 									class="block text-2xl sm:text-3xl lg:text-xl line-clamp-2 mt-3 font-medium hover:text-orange duration-300">
-									Angklung, Warisan Budaya Kebanggaan Indonesia
+									Mempertahankan Identitas Budaya di Era Modern
 								</a>
 							</div>
 						</div>
@@ -678,7 +750,7 @@
 					hubungi kami sekarang
 				</h1>
 				<div class="mt-10" data-aos="zoom-in-up">
-					<a href="/kontak"
+					<a href="/kontak.html"
 						class="btn btn-wide bg-white !border-none rounded-2xl inline-flex items-center gap-4 text-lg text-orange hover:bg-neutral-900 duration-300">
 						<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-orange" viewBox="0 0 24 24">
 							<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">

@@ -15,7 +15,7 @@ body {
   @apply duration-500;
 }
 
-.drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
+.drawer-toggle:checked ~ .drawer-side > .drawer-overlay, .modal::backdrop {
   @apply bg-neutral-950/60 backdrop-blur-sm duration-500;
 }
 
