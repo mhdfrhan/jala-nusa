@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/public/css/style.css" rel="stylesheet">
+
+	<!-- fonts -->
+	<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700,800,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+	<!-- scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+	<!-- navbar -->
+
+	<nav class="fixed top-0 left-0 right-0 z-50 w-full pt-8 duration-500 ease-in-out lg:pt-20 rounded-b-3xl" id="navbar">
+		<div class="container px-5 mx-auto ">
+			<div class="flex items-center justify-between overflow-hidden ">
+				<div class="lg:pl-16" data-aos="fade-down">
+					<a href="/">
+						<img src="/public/img/logo.png" class="w-[150px] " alt="Logo">
+					</a>
+				</div>
+				<div>
+					<div class="drawer drawer-end">
+						<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+						<div class="drawer-content lg:pr-14 lg:py-4 lg:pl-6 lg:rounded-l-[25px] " data-aos="fade-down"
+							data-aos-delay="250">
+							<label for="my-drawer-1" class="cursor-pointer drawer-button">
+								<img class="w-9 h-9 lg:w-[67px] lg:h-[25px]" src="/public/icons/menu.svg" alt="">
+							</label>
+						</div>
+						<div class="w-full drawer-side">
+							<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+							<ul
+								class="menu p-4 w-[70%] lg:w-[60%] 2xl:w-1/3 min-h-full bg-neutral-800 text-neutral-300 rounded-l-3xl lg:rounded-l-[35px]">
+								<!-- Sidebar content here -->
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="/" class="flex items-center justify-between">
+										<div>Beranda</div>
+										<span class="block text-xs sm:text-sm">01</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="/tentang-kami.html" class="flex items-center justify-between">
+										<div>Tentang Kami</div>
+										<span class="block text-xs sm:text-sm">02</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="#wisata-alam" class="flex items-center justify-between">
+										<div>Wisata Alam</div>
+										<span class="block text-xs sm:text-sm">03</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="#budaya-nusantara" class="flex items-center justify-between">
+										<div>Budaya Nusantara</div>
+										<span class="block text-xs sm:text-sm">04</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="#artikel" class="flex items-center justify-between">
+										<div>Artikel</div>
+										<span class="block text-xs sm:text-sm">05</span>
+									</a>
+								</li>
+								<li
+									class="pb-3 mb-3 duration-300 border-b hover:border-neutral-300 sm:text-lg md:text-2xl border-neutral-700">
+									<a href="#kontak-kami" class="flex items-center justify-between focus:!bg-transparent">
+										<div>Kontak Kami</div>
+										<span class="block text-xs sm:text-sm">06</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- end navbar -->
+
+
+	<section class="overflow-hidden py-28 lg:pt-44 lg:pb-24">
+		<div class="container mx-auto px-5 lg:px-14">
+			<img class="w-full max-h-[600px] object-cover rounded-3xl mb-12" src="/public/img/artikel/1.png" alt="">
+			<div class="flex items-center justify-center flex-wrap gap-3 mb-4">
+				<span class="text-neutral-400">25 April 2024</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewbox="0 0 4 5" fill="none">
+					<circle cx="2" cy="2.66669" r="2" fill="#D1D1D1"></circle>
+				</svg>
+				<span class="text-neutral-400">4 min read</span>
+			</div>
+			<h1 class="text-center text-3xl lg:text-5xl font-bold mb-12 max-w-xl lg:max-w-3xl mx-auto">15 Pantai di Indonesia
+				yang Gak Kalah Indah dari Maldives</h1>
+			<div class="max-w-4xl 2xl:max-w-6xl mx-auto">
+				<p>
+					Indonesia, negara kepulauan terbesar di dunia, memiliki ribuan pantai yang menakjubkan. Dari pantai pasir
+					putih hingga pantai berbatu, setiap pantai di Indonesia memiliki keindahan yang unik. Beberapa pantai bahkan
+					dianggap tidak kalah indahnya dari Maldives, destinasi liburan mewah yang terkenal.
+				</p>
+				<p class="mb-8 mt-3">Berikut adalah 15 pantai di Indonesia yang tidak kalah indahnya dari Maldives:</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4">1. Pantai Kuta, Bali</h2>
+				<p>Pantai Kuta adalah salah satu pantai paling terkenal di Bali. Pantai ini terkenal dengan ombaknya yang besar,
+					sehingga sangat cocok untuk berselancar. Selain itu, pantai ini juga memiliki pasir putih yang lembut dan
+					matahari terbenam yang indah.</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">2. Pantai Tanjung Bira, Sulawesi Selatan</h2>
+				<p>Pantai Tanjung Bira terletak di ujung selatan Sulawesi. Pantai ini terkenal dengan pasir putihnya yang lembut
+					dan air lautnya yang jernih. Pantai ini juga merupakan tempat yang sempurna untuk snorkeling dan menyelam.</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">3. Pantai Pink, Lombok</h2>
+				<p>Pantai Pink adalah salah satu pantai paling unik di Indonesia. Pantai ini terkenal dengan pasirnya yang
+					berwarna pink, yang dihasilkan oleh pecahan karang merah. Pantai ini juga memiliki air laut yang jernih dan
+					pemandangan laut yang indah.
+				</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">4. Pantai Tegal Wangi, Bali</h2>
+				<p>Pantai Tegal Wangi terletak di ujung selatan Bali. Pantai ini terkenal dengan pemandangan matahari
+					terbenamnya yang indah. Pantai ini juga memiliki tebing-tebing batu yang indah, yang merupakan tempat yang
+					sempurna untuk bersantai.</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">5. Pantai Ora, Maluku</h2>
+				<p>Pantai Ora terletak di Maluku. Pantai ini terkenal dengan pasirnya yang putih dan air lautnya yang jernih.
+					Pantai ini juga merupakan tempat yang sempurna untuk snorkeling dan menyelam.</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">6. Pantai Trawangan, Lombok</h2>
+				<p>Pantai Trawangan terletak di Lombok. Pantai ini terkenal dengan pasirnya yang putih dan air lautnya yang
+					jernih. Pantai ini juga merupakan tempat yang sempurna untuk berselancar.</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">7. Pantai Gili Trawangan, Lombok</h2>
+				<p>Pantai Gili Trawangan terletak di Lombok. Pantai ini terkenal dengan pasirnya yang putih dan air lautnya yang
+					jernih. Pantai ini juga merupakan tempat yang sempurna untuk berselancar.</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">8. Pantai Gili Meno, Lombok</h2>
+				<p>Pantai Gili Meno terletak di Lombok. Pantai ini terkenal dengan pasirnya yang putih dan air lautnya yang
+					jernih. Pantai ini juga merupakan tempat yang sempurna untuk berselancar.
+				</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">9. Pantai Gili Air, Lombok</h2>
+				<p>Pantai Gili Air terletak di Lombok. Pantai ini terkenal dengan pasirnya yang putih dan air lautnya yang
+					jernih. Pantai ini juga merupakan tempat yang sempurna untuk berselancar.
+				</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">10. Pantai Gili Nanggu, Lombok</h2>
+				<p>Pantai Gili Nanggu terletak di Lombok. Pantai ini terkenal dengan pasirnya yang putih dan air lautnya yang
+					jernih. Pantai ini juga merupakan tempat yang sempurna untuk berselancar.
+				</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">11. Pantai Gili Kedis, Lombok</h2>
+				<p>Pantai Gili Kedis terletak di Lombok. Pantai ini terkenal dengan pasirnya yang putih dan air lautnya yang
+					jernih. Pantai ini juga merupakan tempat yang sempurna untuk berselancar.
+				</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">12. Pantai Gili Sudak, Lombok</h2>
+				<p>Pantai Gili Sudak terletak di Lombok. Pantai ini terkenal dengan pasirnya yang putih dan air lautnya yang
+					jernih. Pantai ini juga merupakan tempat yang sempurna untuk berselancar.
+				</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">13. Karimun Jawa, Jawa Tengah</h2>
+				<p>Kepulauan ini terdiri dari beberapa pulau-pulau kecil. Kamu bisa "lompat" dari satu pulau ke pulau lain dan
+					menikmati keindahan pantai-pantai berpasir putih di sana. Ingat, gak perlu jauh-jauh ke Maldives.
+				</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">14. Pantai Suluban, Bali</h2>
+				<p>Meski sudah sering ke Uluwatu di Bali, mungkin kamu masih belum pernah dengar nama Pantai Suluban. Tidak
+					hanya pemandangannya yang keren, goa-goa yang cantik juga bisa kamu temui di sini.
+				</p>
+				<h2 class="text-xl lg:text-3xl font-bold mb-4 mt-6">15. Pantai Padang-Padang, Bali </h2>
+				<p>
+					Pantai ini dijadikan lokasi film Julia Robert "Eat, Pray, Love". Dipenuhi berbagai karang besar yang
+					menjadikannya tampak lebih indah lagi. Ombaknya pun sangat baik bagi para peselancar, sehingga turnamen
+					surfing dunia sering digelar di sana.
+				</p>
+
+				<div class="w-full h-px bg-neutral-800 mb-6 mt-14"></div>
+				<div class="rounded-lg px-6 py-4 flex items-center flex-wrap gap-2 bg-orange border border-orange/60 mb-5">
+					<span class="text-neutral-200 text-lg">Tertarik dengan artikel lainnya seperti ini?</span>
+					<a class="flex items-center flex-wrap gap-2 text-orange-500 hover:text-orange-600 transition duration-200 font-bold"
+						href="#">
+						<span>Berlangganan newsletter kami</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewbox="0 0 20 21" fill="none">
+							<path d="M4.99984 10.6667H15.4165M15.4165 10.6667L10.4165 5.66675M15.4165 10.6667L10.4165 15.6667"
+								stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</a>
+				</div>
+				<div class="w-full h-px bg-neutral-800 mb-6"></div>
+				<div class="flex items-center justify-between flex-wrap gap-4">
+					<div class="flex items-center gap-4 flex-wrap">
+						<img src="solstice-assets/images/blog/avatar1.png" alt="">
+						<div>
+							<p class="text-lg font-semibold">Muhammad Farhan</p>
+							<span class="text-neutral-500 font-medium">Content Writer, Web Developer</span>
+						</div>
+					</div>
+					<a class="py-2 px-4 h-10 inline-flex items-center justify-center w-full sm:w-auto rounded-full border border-neutral-800 shadow text-sm font-semibold hover:bg-orange focus:ring focus:ring-orange-200 transition duration-200"
+						href="#">Share this post</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="mt-8 pt-8 pb-8 overflow-hidden border-t border-neutral-800">
+		<div class="container px-5 mx-auto  lg:px-14">
+			<div class="overflow-hidden">
+				<img class="mb-10 w-40" src="/public/img/logo.png" alt="" data-aos="fade-right">
+				<div class="flex flex-wrap items-end -m-8 mb-14">
+					<div class="w-full md:w-1/2 p-8">
+						<div class="md:max-w-md">
+							<h3 class="mb-10 text-3xl text-white" data-aos="fade-right" data-aos-delay="100">Berlangganan sekarang
+								agar kamu tidak kelewatan info menarik lainnya
+							</h3>
+							<div
+								class="relative border border-neutral-900 focus-within:border-neutral-600 duration-300 overflow-hidden rounded-3xl"
+								data-aos="fade-right" data-aos-delay="150">
+								<input
+									class="block w-full py-5 pl-8 pr-24 text-lg text-neutral-300 placeholder-neutral-400 bg-transparent focus:outline-none focus:ring-0"
+									type="text" placeholder="Your email adress" style="height: 72px;">
+								<a class="absolute right-0 top-0 flex items-center justify-center px-8 h-full bg-orange hover:bg-white rounded-3xl transition duration-300"
+									href="#">
+									<svg width="10" height="17" viewbox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.79687 15.4299L7.50188 9.72495C8.17563 9.0512 8.17563 7.9487 7.50188 7.27495L1.79688 1.56995"
+											stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full md:w-1/2 p-8">
+						<div class="flex flex-wrap md:justify-end -m-8 lg:-m-20">
+							<div class="w-full md:w-auto p-8 lg:p-20">
+								<h3 class="mb-6 text-lg text-white font-medium" data-aos="fade-up">Halaman</h3>
+								<ul>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="50"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Tentang Kami</a></li>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="100"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Wisata Alam</a></li>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="150"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Budaya Nusantara</a></li>
+									<li data-aos="fade-up" data-aos-delay="200"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Artikel</a></li>
+								</ul>
+							</div>
+							<div class="w-full md:w-auto p-8 lg:p-20">
+								<h3 class="mb-6 text-lg text-white font-medium" data-aos="fade-up">Perusahaan</h3>
+								<ul>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="50"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Alamat</a></li>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="100"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Karir</a></li>
+									<li class="mb-2.5" data-aos="fade-up" data-aos-delay="150"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Tim Kami</a></li>
+									<li data-aos="fade-up" data-aos-delay="200"><a
+											class="inline-block font-medium text-neutral-400 hover:text-white transition duration-300"
+											href="#">Kontak</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-wrap justify-between -m-4">
+					<div class="w-auto p-4">
+						<p class="text-white text-opacity-60 font-medium" data-aos="fade-right" data-aos-offset="10"
+							data-aos-delay="100">©
+							<script>document.write(new Date().getFullYear())</script> JALA NUSA
+						</p>
+					</div>
+					<div class="w-auto p-4">
+						<ul class="flex flex-wrap items-center -m-2" data-aos="fade-left" data-aos-delay="200" data-aos-offset="10">
+							<li class="p-3">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="/public/icons/twitter-white.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="p-2">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="/public/icons/linkedin-white.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="p-2">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="/public/icons/tiktok-wh.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="p-2">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="/public/icons/fb-white.svg" alt="">
+									</div>
+								</a>
+							</li>
+							<li class="p-2">
+								<a href="#"
+									class="w-10 h-10 flex items-center justify-center hover:bg-orange rounded-full duration-300">
+									<div class="inline-block">
+										<img src="/public/icons/instagram-white.svg" alt="">
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="/public/js/script.js"></script>
+	<script>
+		window.addEventListener('scroll', handleScroll);
+
+		function handleScroll() {
+			const navbar = document.getElementById('navbar');
+
+			if (window.scrollY > 0) {
+				navbar.classList.add('bg-neutral-800');
+				navbar.classList.remove('pt-8', 'lg:pt-20');
+				navbar.classList.add('py-3');
+			} else {
+				navbar.classList.remove('bg-neutral-800');
+				navbar.classList.add('pt-8', 'lg:pt-20');
+				navbar.classList.remove('py-3');
+			}
+		}
+
+	</script>
+</body>
+
+</html>

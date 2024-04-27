@@ -1,27 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: [
-		'*.html'
-	],
+  content: ["*.html", "**/*.html"],
   theme: {
     extend: {
-			fontFamily: {
-				'sans': ['"Inter"', ...defaultTheme.fontFamily.sans],
-				'cabinet-grotesk' : "'Cabinet Grotesk', sans-serif"
-			},
-			colors: {
-				orange: '#C94B04'
-			}
-		},
+      fontFamily: {
+        sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
+        "cabinet-grotesk": "'Cabinet Grotesk', sans-serif",
+      },
+      colors: {
+        orange: "#C94B04",
+      },
+    },
   },
-	// darkMode: 'false',
-  plugins: [
-		require("daisyui")
-	],
-	daisyui: {
-    themes: ['business'],
+  // darkMode: 'false',
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["business"],
   },
-}
-
+};
