@@ -1,14 +1,3 @@
-// document.body.style.overflow = "hidden";
-
-// window.onload = function () {
-//   var loaderWrapper = document.querySelector(".loader-wrapper");
-//   loaderWrapper.style.opacity = "0";
-//   loaderWrapper.style.visibility = "hidden";
-//   loaderWrapper.style.transition = "visibility 0s 0.5s, opacity 0.5s linear";
-
-//   document.body.style.overflow = "visible";
-// };
-
 AOS.init({
   once: true,
   duration: 800,
